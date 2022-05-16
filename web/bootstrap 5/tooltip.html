@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tooltop</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <center style="margin-top: 50px;">
+        <button type="button" class="btn btn-secondary" data-placement="Top" title="Tooltop on top">Tooltip on Top
+        </button>
+        <button type="button" class="btn btn-secondary" data-placement="right" title="Tooltop on right">Tooltip on right
+        </button>
+        <button type="button" class="btn btn-secondary" data-placement="bottom" title="Tooltop on botton">Tooltip on
+            bottom </button>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var toolTipList = tooltipTriggerList.map(function (tooltipTriggerEl){
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
+
+    </center>
+</body>
+
+</html>

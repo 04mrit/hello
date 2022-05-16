@@ -1,0 +1,160 @@
+{
+	// Place your snippets for c here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"Print to console": {
+			"prefix": "boiler",
+			"body": [
+				"#include <stdio.h>",
+				"void main(){\n\t$0",
+				// "\treturn 0;"
+				"}"
+			],
+			"description": "Log output to console"
+		},
+
+		"for-loop": {
+			"prefix": "for",
+			"body": [
+				"for (int i=0 ; i< $0 ; i++)\n{\n\t",
+				"}"
+			],
+		},
+		
+		"for-loop-j": {
+			"prefix": "forj",
+			"body": [
+				"for (int j=0 ; j< $0 ; j++)\n{\n\t",
+				"}"
+			],
+		},
+		"for-loop-k": {
+			"prefix": "fork",
+			"body": [
+				"for (int k=0 ; k< $0 ; k++)\n{\n\t",
+				"}"
+			],
+		},
+		"for-loop-l": {
+			"prefix": "forl",
+			"body": [
+				"for (int l=0 ; l< $0 ; l++)\n{\n\t",
+				"}"
+			],
+		},
+		
+		"while-loop": {
+			"prefix": "while",
+			"body": [
+				"while (i< $0)\n{\n\t\n\ti++;",
+				"}"
+			],
+		},
+
+
+		"do-while": {
+			"prefix": "do",
+			"body": [
+				"do\n\t",
+				"while(i < $0)"
+			],
+		},
+		
+		"printf":{
+			"prefix": "printf",
+			"body": [
+				"printf(\"$0\");\n"
+			]
+		},
+		
+		"scanf":{
+			"prefix": "scanf",
+			"body": [
+				"scanf(\"$0\",);\n"
+			]
+		},
+		
+		"fprintf":{
+			"prefix": "fprintf",
+			"body": [
+				"fprintf($0);\n"
+			]
+		},
+		
+		"fscanf":{
+			"prefix": "fscanf",
+			"body": [
+				"fscanf($0);\n"
+			]
+		},
+		
+		"if":{
+			"prefix": "if",
+			"body": [
+				"if ($0){\n\t",
+				"}"
+			]
+		},
+
+		"size of integer":{
+			"prefix": "soi",
+			"body": "sizeof(int)"
+		},
+		
+		"size of character":{
+			"prefix": "soc",
+			"body": "sizeof(char)"
+		},
+		
+		"size of float":{
+			"prefix": "sof",
+			"body": "sizeof(int)"
+		},
+		
+		"mallloc of int":{
+			"prefix": "moi",
+			"body": "(int*) malloc ( $0 * sizeof(int) );\n"
+		},
+		
+		"mallloc of char":{
+			"prefix": "moc",
+			"body": "(char*) malloc ( $0 * sizeof(char) );\n"
+		},
+		
+		"mallloc of float":{
+			"prefix": "mof",
+			"body": "(float*) malloc ( $0 * sizeof(float) );\n"
+		},
+		
+		"calloc of int":{
+			"prefix": "coi",
+			"body": "(int*) calloc ( $0 * sizeof(int) );\n"
+		},
+
+		"calloc of char":{
+			"prefix": "coc",
+			"body": "(char*) calloc ( $0 * sizeof(char) );\n"
+		},
+		
+		"calloc of float":{
+			"prefix": "cof",
+			"body": "(float*) calloc ( $0 * sizeof(float) );\n"
+		},
+		
+		"realloc":{
+			"prefix": "realloc",
+			"body": "realloc($0);\n"
+		},
+
+}

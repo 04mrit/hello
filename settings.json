@@ -1,0 +1,18 @@
+{
+    "editor.fontFamily": "'Cascadia Code'",
+    "explorer.confirmDelete": false,
+    "git.enableSmartCommit": true,
+    "code-runner.preserveFocus": false,
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.startupEditor": "none",
+    "code-runner.executorMap": {
+
+        "c": "cd $dir && gcc $fullFileName && ./a.out && rm a.out"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "liveServer.settings.CustomBrowser": "librewolf"
+}
